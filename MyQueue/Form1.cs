@@ -7,8 +7,6 @@ using System.Data;
 using System.Messaging;
 using System.Threading;
 
-//Ref: https://www.codeproject.com/Articles/5830/Using-MSMQ-from-C
-
 namespace MyQueue
 {
 	/// <summary>
