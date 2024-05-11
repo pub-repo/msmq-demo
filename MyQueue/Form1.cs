@@ -70,78 +70,82 @@ namespace MyQueue
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.txtMsg = new System.Windows.Forms.TextBox();
-			this.btnMsg = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.MsgBox = new System.Windows.Forms.ListBox();
-			this.Messages = new System.Windows.Forms.Label();
-			this.btnRcv = new System.Windows.Forms.Button();
-			this.SuspendLayout();
-			// 
-			// txtMsg
-			// 
-			this.txtMsg.Location = new System.Drawing.Point(112, 16);
-			this.txtMsg.Name = "txtMsg";
-			this.txtMsg.Size = new System.Drawing.Size(280, 20);
-			this.txtMsg.TabIndex = 0;
-			this.txtMsg.Text = "";
-			// 
-			// btnMsg
-			// 
-			this.btnMsg.Location = new System.Drawing.Point(200, 48);
-			this.btnMsg.Name = "btnMsg";
-			this.btnMsg.TabIndex = 1;
-			this.btnMsg.Text = "&Send";
-			this.btnMsg.Click += new System.EventHandler(this.btnMsg_Click);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 16);
-			this.label1.Name = "label1";
-			this.label1.TabIndex = 4;
-			this.label1.Text = "Enter Message :";
-			// 
-			// MsgBox
-			// 
-			this.MsgBox.Location = new System.Drawing.Point(8, 136);
-			this.MsgBox.Name = "MsgBox";
-			this.MsgBox.Size = new System.Drawing.Size(392, 173);
-			this.MsgBox.TabIndex = 2;
-			// 
-			// Messages
-			// 
-			this.Messages.Location = new System.Drawing.Point(16, 104);
-			this.Messages.Name = "Messages";
-			this.Messages.Size = new System.Drawing.Size(160, 23);
-			this.Messages.TabIndex = 3;
-			this.Messages.Text = "Messages : ";
-			// 
-			// btnRcv
-			// 
-			this.btnRcv.Location = new System.Drawing.Point(200, 88);
-			this.btnRcv.Name = "btnRcv";
-			this.btnRcv.TabIndex = 5;
-			this.btnRcv.Text = "&Receive";
-			this.btnRcv.Click += new System.EventHandler(this.btnRcv_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(408, 317);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.btnRcv,
-																		  this.Messages,
-																		  this.MsgBox,
-																		  this.label1,
-																		  this.btnMsg,
-																		  this.txtMsg});
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Queue1";
-			this.ResumeLayout(false);
+            this.txtMsg = new System.Windows.Forms.TextBox();
+            this.btnMsg = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MsgBox = new System.Windows.Forms.ListBox();
+            this.Messages = new System.Windows.Forms.Label();
+            this.btnRcv = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // txtMsg
+            // 
+            this.txtMsg.Location = new System.Drawing.Point(179, 23);
+            this.txtMsg.Name = "txtMsg";
+            this.txtMsg.Size = new System.Drawing.Size(448, 26);
+            this.txtMsg.TabIndex = 0;
+            // 
+            // btnMsg
+            // 
+            this.btnMsg.Location = new System.Drawing.Point(320, 70);
+            this.btnMsg.Name = "btnMsg";
+            this.btnMsg.Size = new System.Drawing.Size(120, 34);
+            this.btnMsg.TabIndex = 1;
+            this.btnMsg.Text = "&Send";
+            this.btnMsg.Click += new System.EventHandler(this.btnMsg_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(13, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Enter Message :";
+            // 
+            // MsgBox
+            // 
+            this.MsgBox.ItemHeight = 20;
+            this.MsgBox.Location = new System.Drawing.Point(13, 199);
+            this.MsgBox.Name = "MsgBox";
+            this.MsgBox.ScrollAlwaysVisible = true;
+            this.MsgBox.Size = new System.Drawing.Size(627, 224);
+            this.MsgBox.TabIndex = 2;
+            // 
+            // Messages
+            // 
+            this.Messages.Location = new System.Drawing.Point(26, 152);
+            this.Messages.Name = "Messages";
+            this.Messages.Size = new System.Drawing.Size(256, 34);
+            this.Messages.TabIndex = 3;
+            this.Messages.Text = "Messages : ";
+            // 
+            // btnRcv
+            // 
+            this.btnRcv.Location = new System.Drawing.Point(320, 129);
+            this.btnRcv.Name = "btnRcv";
+            this.btnRcv.Size = new System.Drawing.Size(120, 33);
+            this.btnRcv.TabIndex = 5;
+            this.btnRcv.Text = "&Receive";
+            this.btnRcv.Click += new System.EventHandler(this.btnRcv_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
+            this.ClientSize = new System.Drawing.Size(656, 445);
+            this.Controls.Add(this.btnRcv);
+            this.Controls.Add(this.Messages);
+            this.Controls.Add(this.MsgBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnMsg);
+            this.Controls.Add(this.txtMsg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Queue1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
